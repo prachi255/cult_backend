@@ -21,6 +21,10 @@ app.use("/api/v1/review", reviewRouter);
 // update user Profile
 // delete user profile
 
+app.use(function(req,res,){
+    res.send("<h1> Backend API</h1>");
+})
+
 // locahost:3000 -> express API 
 app.listen(3000, function () {
     console.log("server started at port 3000");
